@@ -1,0 +1,3 @@
+thanks to cloutjs making byebye-bitcoin (https://github.com/cloutjs/ByeBye-Bitcoin)
+
+<3
