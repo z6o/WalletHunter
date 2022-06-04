@@ -1,9 +1,6 @@
 <img src="./images/thumbnail.png"/>
-<h2>WalletHunter</h2>
-
-# BIG THANKS to cloutjs making ByeBye-Bitcoin (https://github.com/cloutjs/ByeBye-Bitcoin) please check the repositories out!
-So my point is WalletHunter is ByeBye-Bitcoin just over edited.
-
+<h3>WalletHunter</h3>
+<b>WalletHunter is a program that hunt down wallets to search bitcoin.</b>
 # How WalletHunter looks:
 <img src="./images/video.gif"/>
 
