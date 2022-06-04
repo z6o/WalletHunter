@@ -8,7 +8,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 
 <h2>WalletHunter FAQ:</h2>
 <b> • How does WalletHunter get wallets?</br>
-<b> WalletHunter use bitcoinlist.io to get the wallets.</br>
+<b> WalletHunter use <a href="https://bitcoinlist.io/">bitcoinlist.io</a> to get the wallets.</br>
 <b></br>
 <b> • What is <a href="https://bitcoinlist.io/">bitcoinlist.io</a>?</br>
 <b><a href="https://bitcoinlist.io/">bitcoinlist.io</a> is a website that shows millions of trillions wallets and with luck you get a wallet with btc on it.</br>
@@ -26,6 +26,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b></br>
 <h2>Special thanks:</h2>
 <b>Special thanks to <a href="https://github.com/cloutjs">cloutjs</a> for making <a href="https://github.com/cloutjs/ByeBye-Bitcoin">ByeBye-Bitcoin</a>! <3</br>
+<b>And special thanks to <a href="https://bitcoinlist.io/">bitcoinlist.io for making this website!</a></br>
 <b>So my point is WalletHunter is <a href="https://github.com/cloutjs/ByeBye-Bitcoin">ByeBye-Bitcoin</a> just over edited. </br>
 <b>Please check <a href="https://github.com/cloutjs">cloutjs</a> out!</br>
 <b></br>
