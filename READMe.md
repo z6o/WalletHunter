@@ -1,6 +1,6 @@
 <img src="./images/logo.png"/>
 <b></br>
-<img src="./images/video.gif"/>
+
 
 WalletHunter is a program that hunts down Wallets and searching for bitcoin
 
@@ -35,4 +35,5 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b></br>
 <b></br>
 
-
+  <h2>A quick look from WalletHunter:</h2>
+<img src="./images/video.gif"/>
