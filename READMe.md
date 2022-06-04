@@ -26,9 +26,11 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b></br>
 <h2>Special thanks:</h2>
 <b>Special thanks to <a href="https://github.com/cloutjs">cloutjs</a> for making <a href="https://github.com/cloutjs/ByeBye-Bitcoin">ByeBye-Bitcoin</a>! <3</br>
-<b>And special thanks to <a href="https://bitcoinlist.io/">bitcoinlist.io for making this website!</a></br>
 <b>So my point is WalletHunter is <a href="https://github.com/cloutjs/ByeBye-Bitcoin">ByeBye-Bitcoin</a> just over edited. </br>
 <b>Please check <a href="https://github.com/cloutjs">cloutjs</a> out!</br>
+  <b>-</br>
+<b>And special thanks to <a href="https://bitcoinlist.io/">bitcoinlist.io</a> for making this website! <3</br>
+
 <b></br>
 <b></br>
 <h2>A quick look from WalletHunter:</h2>
