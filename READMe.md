@@ -20,7 +20,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <h2>WalletHunter features:</h2>
 <b> • Discord-Webhook are supported.</br>
 <b> • Config file is built in.</br>
-<b> • Proxies are supported. </br>
+<b> • Proxies are supported. (they get always scraped after restarting WalletHunter)</br>
 <b> • More comming soon.</br>
 <b></br>
 <b></br>
