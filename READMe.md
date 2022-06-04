@@ -1,7 +1,5 @@
 <img src="./images/thumbnail.png"/>
-<h3>WalletHunter</h3>
-<b>WalletHunter is a program that hunt down wallets to search bitcoin.</b>
-# How WalletHunter looks:
-<img src="./images/video.gif"/>
+<b></br>
 
-<b>EDUCTIONAL PURPOSES ONLY</b>
+# WalletHunter
+WalletHunter is a program that hunts down Wallets and searching for bitcoin
