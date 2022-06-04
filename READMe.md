@@ -1,3 +1,4 @@
+<img src="./images/thumbnail.png"/>
 # WalletHunter
 WalletHunter is a python program that hunt wallets using bitcoinlist.io
 
