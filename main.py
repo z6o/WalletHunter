@@ -97,7 +97,7 @@ while True:
                 hits += 1
                 Send()
                 open('hits.txt', 'a+').write(f"{balance} BTC found in Adress: {compaddy} // Private Key: {privkey}")
-            os.system("cls")
+            os.system("cls||clear")
             os.system(f"title WalletHunter ^| Checked Wallets: {checked} ^| Hits: {hits}")
             print(f"""{Fore.YELLOW}
 ██╗    ██╗ █████╗ ██╗     ██╗     ███████╗████████╗    ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗
