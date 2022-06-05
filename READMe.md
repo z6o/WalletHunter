@@ -34,7 +34,6 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b> • colorama </br>
 <b> • configparser </br>
 <b> • random </br>
-<b> You can install all libaries if you run the command `pip install -r requirements.txt` </br>
 <b></br>
 <b></br>
 <h2>Special thanks:</h2>
