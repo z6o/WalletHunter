@@ -1,0 +1,7 @@
+requests
+bs4
+time
+os
+colorama
+configparser
+random
