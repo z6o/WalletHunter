@@ -15,7 +15,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b><a href="https://bitcoinlist.io/">bitcoinlist.io</a> is a website that shows millions of trillions wallets and with luck you get a wallet with btc on it.</br>
 <b></br>
 <b> • Is WalletHunter legal? </br>
-<b>No because programs with types of this are in the catogiry "hacking" and wallet mining is like a bruteforce attack so it is illegal but if you want to use it you can use it noone will stop you but DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE.</br>
+<b>No because programs with types of this are in the catogiry "hacking" and wallet mining is like a bruteforce attack so it is illegal but if you want to use it you can use it no one will stop you but DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE.</br>
 <b></br>
 <b></br>
 <h2>WalletHunter features:</h2>
@@ -24,6 +24,17 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b> • Config file is built in.</br>
 <b> • Proxies are supported. (they get always scraped after restarting WalletHunter)</br>
 <b> • More comming soon.</br>
+<b></br>
+<b></br>
+<h2>Requirements:</h2>
+<b> • requests</br>
+<b> • bs4</br>
+<b> • time</br>
+<b> • os <br>
+<b> • colorama </br>
+<b> • configparser </br>
+<b> • random </br>
+<b> You can install all libaries if you run the command `pip install -r requirements.txt` </br>
 <b></br>
 <b></br>
 <h2>Special thanks:</h2>
