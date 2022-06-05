@@ -18,7 +18,7 @@ def Send():
             {
                 "author": {
                     "name": "WalletHunter",
-                    "url": "https://github.com/z6o",
+                    "url": "https://github.com/z6o/WalletHunter",
                     "icon_url": ""
                 },
                 "description": f"Private Key: {privkey}\nUncompressed Address: {uncompaddy}\nCompressed Address: {compaddy}\nBalance: {balance}\nProxie Type: {proxie_type}",
