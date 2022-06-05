@@ -1,7 +1,6 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 from bs4 import BeautifulSoup
-from datetime import datetime
 import time
 import os
 from colorama import Fore, Back
@@ -31,9 +30,6 @@ def Send():
     }
     requests.post(webhook, json=embed)
 
-
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
 
 
 file = 'config.ini'
