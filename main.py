@@ -1,12 +1,14 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 from bs4 import BeautifulSoup
+from datetime import datetime
 import time
 import os
 from colorama import Fore, Back
 from configparser import ConfigParser
 import random
 import logging
+import ctypes
 
 def Send():
     embed = {
@@ -17,19 +19,22 @@ def Send():
             {
                 "author": {
                     "name": "WalletHunter",
-                    "url": "https://github.com/z6o/WalletHunter",
+                    "url": "https://github.com/z6o",
                     "icon_url": ""
                 },
                 "description": f"Private Key: {privkey}\nUncompressed Address: {uncompaddy}\nCompressed Address: {compaddy}\nBalance: {balance}\nProxie Type: {proxie_type}",
                 "color": 0x000000,
                 "footer": {
-                    "text": "WalletHunter | Checked Wallets: {checked} | Hits: {hits}"
+                    "text": f"WalletHunter | Checked Wallets: {checked} | Hits: {hits}"
                 }
             }
         ]
     }
     requests.post(webhook, json=embed)
 
+
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
 
 
 file = 'config.ini'
@@ -71,7 +76,7 @@ if proxie_scraper == "True":
 os.system("cls||clear")
 
 while True:
-    os.system(f"title WalletHunter ^| Checked Wallets: {checked} ^| Hits: {hits}")
+    ctypes.windll.kernel32.SetConsoleTitleW(f"WalletHunter | Checked Wallets: {checked} | Hits: {hits}")
     url = "https://www.bitcoinlist.io/random"
     headers = CaseInsensitiveDict()
     headers[
@@ -94,7 +99,7 @@ while True:
                 Send()
                 open('hits.txt', 'a+').write(f"{balance} BTC found in Adress: {compaddy} // Private Key: {privkey}")
             os.system("cls||clear")
-            os.system(f"title WalletHunter ^| Checked Wallets: {checked} ^| Hits: {hits}")
+            ctypes.windll.kernel32.SetConsoleTitleW(f"WalletHunter | Checked Wallets: {checked} | Hits: {hits}")
             print(f"""{Fore.YELLOW}
 ██╗    ██╗ █████╗ ██╗     ██╗     ███████╗████████╗    ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗
 ██║    ██║██╔══██╗██║     ██║     ██╔════╝╚══██╔══╝    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗
