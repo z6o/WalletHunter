@@ -32,6 +32,28 @@ def Send():
     }
     requests.post(webhook, json=embed)
 
+def webhook_tester():
+    embed = {
+        "avatar_url": "",
+        "username": "WalletHunter",
+        "content": "@everyone",
+        "embeds": [
+            {
+                "author": {
+                    "name": "WalletHunter",
+                    "url": "https://github.com/z6o",
+                    "icon_url": ""
+                },
+                "description": f"Your webhook is working.",
+                "color": 0x000000,
+                "footer": {
+                    "text": f"WalletHunter | Webhook: {webhook}"
+                }
+            }
+        ]
+    }
+    requests.post(webhook, json=embed)
+
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
@@ -60,7 +82,7 @@ if log == "True":
 if warning_message == "True":
     os.system("msg * WARNING EDUCTIONEL PURPOSES ONLY IF YOU GET CAUGHT ITS YOUR FAULT DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE!")
 if webhook_test == "True":
-    requests.post(f"{webhook}", json={"content": f"@everyone /nWebhook working."})
+    webhook_tester()
 if proxie_scraper == "True":
     
     print("Scraping proxies...")
@@ -81,7 +103,10 @@ while True:
     headers = CaseInsensitiveDict()
     headers[
         "User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
-    req = requests.get(url, headers=headers,proxies={f"{proxie_type}": f'{proxie_type}://' + random.choice(proxies)})
+    if use_proxies == "True":
+        req = requests.get(url, headers=headers,proxies={f"{proxie_type}": f'{proxie_type}://' + random.choice(proxies)})
+    if use_proxies == "False":
+        req = requests.get(url, headers=headers)
     soup = BeautifulSoup(req.content, 'html.parser')
     wallets = soup.find_all("tr")
     for wallet in wallets:
@@ -107,7 +132,7 @@ while True:
 ██║███╗██║██╔══██║██║     ██║     ██╔══╝     ██║       ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗
 ╚███╔███╔╝██║  ██║███████╗███████╗███████╗   ██║       ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║
  ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝       ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-                                                 {Fore.WHITE}v.03{Fore.RESET}
+                                                 {Fore.WHITE}v.04{Fore.RESET}
 {Fore.YELLOW}
 
                                 {Back.RED}:: DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE ::{Back.RESET}
