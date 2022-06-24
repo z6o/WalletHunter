@@ -1,7 +1,7 @@
 <img src="./images/logo.png"/>
 <b></br>
 
-<b> ⠀  ⠀  ⠀  ⠀  ⠀  ⠀  ⠀  ⠀  ⠀  ⠀  ⠀ [![Run on Repl.it](https://repl.it/badge/github/z6o/WalletHunter)](https://repl.it/github/z6o/WalletHunter)</br>
+<b>[![Run on Repl.it](https://repl.it/badge/github/z6o/WalletHunter)](https://repl.it/github/z6o/WalletHunter)</br>
 
 WalletHunter is a program that hunts down Wallets and searching for bitcoin
 
@@ -34,7 +34,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b> • colorama </br>
 <b> • configparser </br>
 <b> • random </br>
-<b> • ctypes </br>
+
 <b></br>
 <b></br>
 <h2>Special thanks:</h2>
