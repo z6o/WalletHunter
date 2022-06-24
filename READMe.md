@@ -34,6 +34,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b> • colorama </br>
 <b> • configparser </br>
 <b> • random </br>
+<b> • threading </br>
 
 <b></br>
 <b></br>
