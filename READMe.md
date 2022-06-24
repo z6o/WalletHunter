@@ -23,6 +23,7 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b> • Log-system is built in. (its not perfect but its get overedited soon. / You can disable it in config.ini)</br>
 <b> • Config file is built in.</br>
 <b> • Proxies are supported. (they get always scraped after restarting WalletHunter)</br>
+<b> • Use threads is supported. </br>
 <b> • More comming soon.</br>
 <b></br>
 <b></br>
