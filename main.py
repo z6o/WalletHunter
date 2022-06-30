@@ -141,18 +141,18 @@ def WalletHunter():
 
                         {Fore.RESET}
 
-                            Private Key: {privkey}
-                            Uncompressed Address: {uncompaddy}
-                            Compressed Address: {compaddy}
-                            Balance: {balance}
-                            Proxie Type: {proxie_type}
-                            Threads: {threads}
+                            Private Key: {privkey}\r
+                            Uncompressed Address: {uncompaddy}\r
+                            Compressed Address: {compaddy}\r
+                            Balance: {balance}\r
+                            Proxie Type: {proxie_type}\r
+                            Threads: {threads}\r
                             
 
         """)
                 
                 time.sleep(3)
-                os.system("cls||clear")
+                #os.system("cls||clear")
 
 if use_threads == "True":
     for i in range(int(f"{threads}")):
