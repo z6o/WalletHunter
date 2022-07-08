@@ -6,7 +6,16 @@
 WalletHunter is a program that hunts down Wallets and searching for bitcoin
 
 <b></br>
-
+<h2>How to download and use WalletHunter:</h2>
+<b>`cd Desktop`</br>
+<b>`git clone https://github.com/z6o/WalletHunter/`</br>
+<b>`cd WalletHunter`</br>
+<b>Then configure WalletHunter so add a webhook and write a number of threads and change some other option if you want.</br>
+<b>`python3 main.py` or `python main.py`</br>
+<b>Then WalletHunter should run.</br>
+<b>Goodluck maybe you find some btc!</br>
+<b></br>
+<b></br>
 <h2>WalletHunter FAQ:</h2>
 <b> • How does WalletHunter get wallets?</br>
 <b> WalletHunter use <a href="https://bitcoinlist.io/">bitcoinlist.io</a> to get the wallets.</br>
@@ -49,5 +58,4 @@ WalletHunter is a program that hunts down Wallets and searching for bitcoin
 <b></br>
 <b></br>
 
-  <h2>A quick look from WalletHunter:</h2>
-<img src="./images/video.gif"/>
+
