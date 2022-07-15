@@ -1,7 +1,6 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 from bs4 import BeautifulSoup
-from datetime import datetime
 import time
 import os
 from colorama import Fore, Back
@@ -34,8 +33,6 @@ def webhook_tester():
     requests.post(webhook, json=embed)
 
 
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
 
 file = 'config.ini'
 config = ConfigParser()
@@ -52,11 +49,18 @@ use_threads = config['threading']['use_threads']
 threads = config['threading']['threads']
 checked = 0
 hits = 0
-
+os.system("cls||clear")
 if log == "True":
     logging.basicConfig(filename='log.log', level=logging.DEBUG,format='%(asctime)s:%(levelname)s:%(message)s')
+if use_threads == "True":
+    print(f"[{Fore.GREEN}SUCCESS{Fore.RESET}] Threads set to {threads}")
 
-
+if webhook == "":
+    w_question = input(f"[{Fore.RED}WARNING{Fore.RESET}] We couldnt find an webhook in config.ini are you sure to continue? (y/n)")
+    if w_question == "n":
+        exit()
+else:
+    print(f"[{Fore.GREEN}SUCCESS{Fore.RESET}] Founded webhook in config.ini")
 if warning_message == "True":
     os.system("msg * WARNING EDUCTIONEL PURPOSES ONLY IF YOU GET CAUGHT ITS YOUR FAULT DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE!")
 if webhook_test == "True":
@@ -65,12 +69,13 @@ if proxie_scraper == "True":
     print(f"[{Fore.YELLOW}INFO{Fore.RESET}] Scraping proxies...")
     f = open("./proxies.txt", "a+")
     r = requests.get(f"https://api.proxyscrape.com/?request=displayproxies&proxytype={proxie_type}&timeout=5000")
+    print(f"[{Fore.YELLOW}INFO{Fore.RESET}] Loading WalletHunter...")
     for proxy in r.text.split("\n"):
         proxy = proxy.strip()
         if proxy:
             f.write(str(proxy)+"\n")
        
-        os.system("title [INFO] Loading WalletHunter...")
+        os.system("")
             
             
    
@@ -85,7 +90,7 @@ def WalletHunter():
         headers[
                 "User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
         if use_proxies == "True":
-            req = requests.get(url, headers=headers, proxies={"http": 'http://' + random.choice(proxies)})
+            req = requests.get(url, headers=headers, proxies={f"{proxytype}": f'{proxytype}://' + random.choice(proxies)})
         if use_proxies == "False":
             req = requests.get(url, headers=headers)
         soup = BeautifulSoup(req.content, 'html.parser')
@@ -133,13 +138,15 @@ def WalletHunter():
         ██║███╗██║██╔══██║██║     ██║     ██╔══╝     ██║       ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗
         ╚███╔███╔╝██║  ██║███████╗███████╗███████╗   ██║       ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║
          ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝       ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-                                                        {Fore.WHITE}v.05{Fore.RESET}
+                                                        {Fore.WHITE} v.05{Fore.RESET}
         {Fore.YELLOW}
 
                                         {Back.RED}:: DEVS ARE NOT RESPONSIBLE FOR ANY DAMAGE ::{Back.RESET}
                                         {Back.RED}:: SO IF SOMETHING HAPPENS ITS YUR FAULT   ::{Back.RESET}
-
+                                                       
+                                             https://github.com/z6o/WalletHunter
                         {Fore.RESET}
+
 
                             Private Key: {privkey}\r
                             Uncompressed Address: {uncompaddy}\r
@@ -151,7 +158,7 @@ def WalletHunter():
 
         """)
                 
-                time.sleep(3)
+                time.sleep(1)
                 #os.system("cls||clear")
 
 if use_threads == "True":
