@@ -90,7 +90,7 @@ def WalletHunter():
         headers[
                 "User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
         if use_proxies == "True":
-            req = requests.get(url, headers=headers, proxies={f"{proxytype}": f'{proxytype}://' + random.choice(proxies)})
+            req = requests.get(url, headers=headers, proxies={f"{proxie_type}": f'{proxie_type}://' + random.choice(proxies)})
         if use_proxies == "False":
             req = requests.get(url, headers=headers)
         soup = BeautifulSoup(req.content, 'html.parser')
