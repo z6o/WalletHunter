@@ -1,9 +1,9 @@
 <img src="./images/logo.png"/>
 <b></br>
-<h4>THE WEBSITE bitcoinlist.io IS DOWN THATS WHY THE PROGRAMM ISNT WORKING ANYMORE!</h4>
+<b></br>
+<h5>THE WEBSITE bitcoinlist.io IS DOWN THATS WHY THE PROGRAMM ISNT WORKING ANYMORE!</h5>
 <b></b>
 
-WalletHunter is a program that hunts down Wallets and searching for bitcoin
 
 <b></br>
 <h2>How to download and use WalletHunter:</h2>
