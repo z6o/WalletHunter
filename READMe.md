@@ -1,7 +1,7 @@
 <img src="./images/logo.png"/>
 <b></br>
 <b></br>
-<h5>THE WEBSITE bitcoinlist.io IS DOWN THATS WHY THE PROGRAMM ISNT WORKING ANYMORE!</h5>
+<h5>WalletHunter ISNT WORKING ANYMORE BECAUSE THE WEBSITE bitcoinlist.io IS DOWN AND WALLETHUNTER DID GET THE WALLETS FROM bitcoinlist.io THATS WHY WalletHunter ISNT WORKING ANYMORE</h5>
 <b></b>
 
 
