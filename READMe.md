@@ -1,6 +1,6 @@
 <img src="./images/logo.png"/>
 <b></br>
-<h3>The program isn't working anymore because the website bitcoinlist.io is down.</h3>
+<h4>THE WEBSITE bitcoinlist.io IS DOWN THATS WHY THE PROGRAMM ISNT WORKING ANYMORE!</h4>
 <b></b>
 
 WalletHunter is a program that hunts down Wallets and searching for bitcoin
